@@ -1,0 +1,26 @@
+0 silly argv {
+0 silly argv   _: [ 'import' ],
+0 silly argv   loglevel: 'silly',
+0 silly argv   flatten: true,
+0 silly argv   'preserve-commit': true,
+0 silly argv   preserveCommit: true,
+0 silly argv   dest: 'packages',
+0 silly argv   lernaVersion: '7.1.5',
+0 silly argv   '$0': '/usr/local/bin/lerna',
+0 silly argv   dir: '/home/gabriella/Documents/aws/demo05/image-analysis-certo'
+0 silly argv }
+1 notice cli v7.1.5
+2 verbose packageConfigs Explicit "packages" configuration found in lerna.json. Resolving packages using the configured glob(s): ["packages/*"]
+3 verbose rootPath /home/gabriella/Documents/aws/monorepo
+4 info versioning independent
+5 error Error: Command failed with exit code 128: git rev-parse HEAD
+5 error fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
+5 error Use '--' to separate paths from revisions, like this:
+5 error 'git <command> [<revision>...] -- [<file>...]'
+5 error HEAD
+5 error     at makeError (/home/gabriella/.config/yarn/global/node_modules/@lerna/child-process/node_modules/execa/lib/error.js:60:11)
+5 error     at Function.module.exports.sync (/home/gabriella/.config/yarn/global/node_modules/@lerna/child-process/node_modules/execa/index.js:194:17)
+5 error     at Object.execSync (/home/gabriella/.config/yarn/global/node_modules/@lerna/child-process/index.js:39:16)
+5 error     at ImportCommand.execSync (/home/gabriella/.config/yarn/global/node_modules/lerna/dist/index.js:6938:31)
+5 error     at ImportCommand.getCurrentSHA (/home/gabriella/.config/yarn/global/node_modules/lerna/dist/index.js:6932:21)
+5 error     at ImportCommand.initialize (/home/gabriella/.config/yarn/global/node_modules/lerna/dist/index.js:6909:35)
